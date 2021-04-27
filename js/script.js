@@ -81,12 +81,16 @@ var contact = [
 
 var link = [
     {
-        'name': '',
-        'link': ''
+        'name': 'Teste e Práticas de Front-End',
+        'link': 'https://seikinagaishi.github.io/html-css-practice/html-training.html'
     },
     {
-        'name': '',
-        'link': ''
+        'name': 'Projeto de Desenvolvimento Web',
+        'link': 'https://seikinagaishi.github.io/college-projects/projeto-web/projeto1/'
+    },
+    {
+        'name': 'Simulador de desejos do jogo Genshin Impact',
+        'link': 'https://seikinagaishi.github.io/genshin-gacha-simulator/'
     },
 ]
 
@@ -295,6 +299,7 @@ function getLinkElements() {
         linkElement.className = 'container-info-link'
         linkElement.innerText = item.name
         linkElement.href = item.link
+        linkElement.target = '_blank'
 
         infoElement.appendChild(linkElement)
 
